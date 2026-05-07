@@ -1,0 +1,13 @@
+{
+  "statute": "Digital Trade Facilitation Bill (DTFB) 2026",
+  "focus": "Cross-Border Electronic Trade Documents",
+  "key_standards": {
+    "legal_recognition": "Electronic trade documents (Bills of Lading, Invoices) have same legal standing as paper.",
+    "possession_logic": "Control over a digital document via a 'reliable method' constitutes legal possession."
+  },
+  "reliability_criteria": [
+    "Integrity of the document since creation",
+    "Identification of the person in control",
+    "Ability to demonstrate that the document is the authoritative version"
+  ]
+}
