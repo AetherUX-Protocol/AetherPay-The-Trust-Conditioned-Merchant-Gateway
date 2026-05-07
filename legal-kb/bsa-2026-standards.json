@@ -1,0 +1,38 @@
+{
+  "statute": "Bharatiya Sakshya Adhiniyam (BSA) 2026",
+  "jurisdiction": "India",
+  "primary_sections": {
+    "section_57": {
+      "title": "Electronic Records as Primary Evidence",
+      "requirement": "Original digital file produced from proper custody is treated as primary evidence."
+    },
+    "section_61": {
+      "title": "Admissibility of Electronic Records",
+      "conditions": [
+        "Device must be operating properly during data creation",
+        "Information must be fed in the ordinary course of activity",
+        "Integrity of the data must be maintained"
+      ]
+    },
+    "section_63": {
+      "title": "Certificate Requirement",
+      "mandatory_fields": [
+        "Hash Value (SHA-256)",
+        "Device Identifier",
+        "Signature of Responsible Official"
+      ]
+    }
+  },
+  "audit_rules": [
+    {
+      "id": "BSA_RULE_01",
+      "check": "Hash Verification",
+      "logic": "The QVAC engine must generate a unique SHA-256 hash to satisfy Section 63 requirements."
+    },
+    {
+      "id": "BSA_RULE_02",
+      "check": "Metadata Integrity",
+      "logic": "Check for 'created_at' and 'modified_at' consistency to prove non-tampering."
+    }
+  ]
+}
